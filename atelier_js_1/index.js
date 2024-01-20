@@ -24,13 +24,17 @@ function hailstone(n) {
   } while (n != 1);
 }
 
-//ex3 (stings)
+//ex3 (strings)
 function makenewstring(ch) {
   if (ch.length === 3) {
     return ch;
-  } else return ch.substring(0, 3) + ch.substring(3);
+  } else return ch.substring(0, 3) + ch.substring(ch.length - 3);
 }
 
 function firsthalt(ch) {
   return ch.substring(0, ch.length / 2);
+}
+
+function concatenate(string1, string2) {
+  return string1 + string2;
 }

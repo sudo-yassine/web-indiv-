@@ -7,5 +7,15 @@
   </head>
   <body>
     <h1>2/script addition</h1>
+    <h3>la resultat est :</h3>
+    <p id="resultat">la resultat est :</p>
+    <script>
+      var a = parseFloat(prompt("saisir valeur 1 :"));
+      var b = parseFloat(prompt("saisir valeur 2 :"));
+      var res = a + b;
+      console.log("la somme est : ", res); //afficher console
+
+      document.getElementById("resultat").innerHTML = res; //afficher html
+    </script>
   </body>
 </html>
