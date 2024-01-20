@@ -38,3 +38,22 @@ function firsthalt(ch) {
 function concatenate(string1, string2) {
   return string1 + string2;
 }
+
+function contains2To4(string, ch) {
+  var nb = 0;
+  for (var i = 0; i < string.length; i++) {
+    if (string[i] === ch) {
+      nb++;
+    }
+  }
+  if (nb > 2 && nb < 4) {
+    return true;
+  } else return false;
+}
+
+// ex4 (table)
+function evenNumbers(number) {
+  if (number / 2 === 0) {
+    return true;
+  } else return false;
+}
