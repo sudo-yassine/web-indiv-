@@ -57,3 +57,7 @@ function evenNumbers(number) {
     return true;
   } else return false;
 }
+
+function pop(tab, n) {
+  return tab.slice(0, n);
+}
