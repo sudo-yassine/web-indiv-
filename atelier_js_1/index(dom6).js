@@ -1,0 +1,4 @@
+function calculeScore() {
+  if (condition) {
+  }
+}
