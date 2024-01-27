@@ -20,15 +20,17 @@ function hailstone(n) {
   do {
     if (n / 2 === 0) {
       n /= 2;
+      console.log(n);
     } else n = n * 3 + 1;
+    console.log(n);
   } while (n != 1);
 }
 
 //ex3 (strings)
 function makenewstring(ch) {
-  if (ch.length === 3) {
+  if (ch.length() === 3) {
     return ch;
-  } else return ch.substring(0, 3) + ch.substring(ch.length - 3);
+  } else return ch.substring(0, 3) + ch.substring(ch.length - 3, ch.length);
 }
 
 function firsthalt(ch) {
@@ -41,7 +43,7 @@ function concatenate(string1, string2) {
 
 function contains2To4(string, ch) {
   var nb = 0;
-  for (var i = 0; i < string.length; i++) {
+  for (var i = 0; i <= string.length; i++) {
     if (string[i] === ch) {
       nb++;
     }
@@ -59,5 +61,8 @@ function evenNumbers(number) {
 }
 
 function pop(tab, n) {
+  if (n > tab.length) {
+    return tab[1];
+  }
   return tab.slice(0, n);
 }
