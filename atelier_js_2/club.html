@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>workshop 2</title>
+    <style>
+      .rectangle {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid black;
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ajouter un club</h1>
+    <form>
+      <div class="rectangle">
+        <p>responsable du club</p>
+
+        <div>
+          <label for="nom">Nom : </label>
+          <input type="text" name="nom" id="nom" />
+        </div>
+        <br />
+        <div>
+          <label for="prenom">prenom :</label>
+          <input type="text" name="prenom" id="prenom" />
+        </div>
+        <br />
+        <div>
+          <label for="email">E-mail du responsable :</label>
+          <input type="text" name="email " id="email" />
+        </div>
+        <br />
+        <div>
+          <label for="confirmemail">confirmation E-mail :</label>
+          <input
+            type="text"
+            name="confirmemail"
+            id="confirmemail"
+            oninput="confirmationmail()"
+          />
+        </div>
+        <br />
+        <label for="motdepasse">Mot de passe :</label>
+        <input type="text" name="motdepasse" id="motdepasse" />
+      </div>
+      <br />
+      <div class="rectangle">
+        <div>
+          <label for="nomclub">Nom Club :</label>
+          <input type="text" name="nomclub" id="nomclub" />
+        </div>
+        <br />
+        <div>
+          <label for="datef">Date Fondation :</label>
+          <input type="date" name="datef" id="datef" />
+        </div>
+        <br />
+        <div>
+          <label for="nbrmembre">Nombre de membres :</label>
+          <input type="number" name="nbrmembre" id="nbrmembre" />
+        </div>
+        <br />
+        <div>
+          <div>
+            <label for="categorie">Categorie :</label>
+            <select name="categorie" id="categorie">
+              <option value="informatique">Informatique</option>
+              <option value="electronique">electronique</option>
+              <option value="mecanique">mecanique</option>
+              <option value="geniecivil">genie civil</option>
+            </select>
+          </div>
+          <br />
+          <label for="typeactivite">Type d'activites :</label>
+          <br />
+          <table>
+            <tr>
+              <td>
+                <input type="checkbox" name="seminaire" id="seminaire" />
+                <label for="seminaire">seminaire</label>
+              </td>
+              <td>
+                <input type="checkbox" name="formation" id="formation" />
+                <label for="formation">formation</label>
+              </td>
+              <td>
+                <input type="checkbox" name="evenement" id="evenement" />
+                <label for="evenement">Evenement</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" name="teambuilding" id="teambuilding" />
+                <label for="teambuilding">Team Building</label>
+              </td>
+              <td>
+                <input type="checkbox" name="autre" id="autre" />
+                <label for="autre">Autres</label>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <br />
+        <div>
+          <label for="adhesion">Adhesion :</label>
+          <input type="radio" name="ouverte" id="ouverte" />
+          <label for="ouverte">ouverte</label>
+          <input type="radio" name="fermee" id="fermee" />
+          <label for="fermee">fermee</label>
+        </div>
+        <br />
+        <div>
+          <button onclick="verif()">envoyer</button>
+          <button onclick="clearInterval">tout enlever</button>
+        </div>
+      </div>
+    </form>
+    <script src="club.js"></script>
+  </body>
+</html>
