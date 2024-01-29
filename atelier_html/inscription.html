@@ -20,7 +20,7 @@
             <label for="nom">Nom :</label>
           </td>
           <td>
-            <input type="text" name="nom" id="nom" />
+            <input type="text" name="nom" id="nom" pattern="([A-Z=a-z])" />
           </td>
         </tr>
         <tr>
@@ -28,7 +28,7 @@
             <label for="prenom">Prenom :</label>
           </td>
           <td>
-            <input type="text" name="prenom" id="prenom" />
+            <input type="text" name="prenom" id="prenom" part="a-z A-Z" />
           </td>
         </tr>
         <tr>
@@ -60,12 +60,7 @@
             <label for="motdepasse">mot de passe</label>
           </td>
           <td>
-            <input
-              type="password"
-              name="motdepasse"
-              id="motdepasse"
-              pattern=""
-            />
+            <input type="password" name="motdepasse" id="motdepasse" />
           </td>
         </tr>
         <tr>
