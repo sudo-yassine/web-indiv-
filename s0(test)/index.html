@@ -1,9 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ajouter un club</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Ajouter un club</h1>
+    <form>
+      <p>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required />
+      </p>
+      <p>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required />
+      </p>
+      <p>
+        <label for="email">E-Mail du responsable :</label>
+        <input type="email" id="email" name="email" required />
+      </p>
+      <p>
+        <label for="confirm_email">Confirmation E-Mail du responsable :</label>
+        <input type="email" id="confirm_email" name="confirm_email" required />
+      </p>
+      <p>
+        <label for="password">Mot de Passe :</label>
+        <input type="password" id="password" name="password" required />
+      </p>
+      <p>
+        <label for="nom_club">Nom Club :</label>
+        <input type="text" id="nom_club" name="nom_club" required />
+      </p>
+      <p>
+        <label for="date_fondation">Date Fondation :</label>
+        <input type="date" id="date_fondation" name="date_fondation" required />
+      </p>
+      <p>
+        <label for="nombre_membres">Nombre de membres :</label>
+        <input
+          type="number"
+          id="nombre_membres"
+          name="nombre_membres"
+          required
+        />
+      </p>
+      <p>
+        <label for="categorie">Catégorie :</label>
+        <select id="categorie" name="categorie" required>
+          <option value="">Sélectionner</option>
+          <option value="sportif">Sportif</option>
+          <option value="culturel">Culturel</option>
+          <option value="social">Social</option>
+          <option value="autre">Autre</option>
+        </select>
+      </p>
+      <p>
+        Type d’activités :<br />
+        <input type="checkbox" id="seminaire" name="seminaire" />
+        <label for="seminaire">Séminaire</label><br />
+        <input type="checkbox" id="formation" name="formation" />
+        <label for="formation">Formation</label><br />
+        <input type="checkbox" id="evenements" name="evenements" />
+        <label for="evenements">Évènements</label><br />
+        <input type="checkbox" id="team_building" name="team_building" />
+        <label for="team_building">Team Building</label><br />
+        <input type="checkbox" id="autres" name="autres" />
+        <label for="autres">Autres</label>
+      </p>
+      <p>
+        Adhésion :<br />
+        <input
+          type="radio"
+          id="ouverte"
+          name="adhesion"
+          value="ouverte"
+          required
+        />
+        <label for="ouverte">Ouverte</label><br />
+        <input
+          type="radio"
+          id="fermee"
+          name="adhesion"
+          value="fermee"
+          required
+        />
+        <label for="fermee">Fermée</label>
+      </p>
+      <p>
+        <button type="submit">Envoyer</button>
+        <button type="reset">Tout enlever</button>
+      </p>
+    </form>
+  </body>
 </html>
