@@ -62,6 +62,6 @@ function confirmationmail() {
   var confirmemail = document.getElementById("confirmemail").value;
   if (email != confirmemail) {
     alert("email confirmatoin incorrect");
-    resultat = false;
+    // resultat = false;
   }
 }
