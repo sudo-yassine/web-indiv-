@@ -23,6 +23,7 @@ function verif() {
     alert("email invalid");
     resultat = false;
   }
+
   if (!Regexmotdepasse.test(motdepasse)) {
     alert("motdepasse invalid");
     resultat = false;
