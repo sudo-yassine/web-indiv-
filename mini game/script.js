@@ -20,7 +20,7 @@ const bullets = [];
 const bulletSpeed = 7;
 
 const enemies = [];
-let enemySpeed = 0.5;
+let enemySpeed = 0.3;
 
 const keys = {
   left: false,
@@ -55,6 +55,29 @@ function update() {
     bullet.y -= bulletSpeed;
   }
 
+  bullets.forEach((bullet, index) => {
+    if (bullet.y < 0) {
+      bullets.splice(index, 1);
+    }
+  });
+
+  for (const enemy of enemies) {
+    enemy.x += enemy.speedX;
+    enemy.y += enemy.speedY;
+
+    if (enemy.x < 0 || enemy.x > canvas.width - enemy.width) {
+      enemy.speedX = -enemy.speedX;
+    }
+    if (enemy.y < 0 || enemy.y > canvas.height - enemy.height) {
+      enemy.speedY = -enemy.speedY;
+    }
+  }
+
+  enemies.forEach((enemy, index) => {
+    if (enemy.y > canvas.height) {
+      enemies.splice(index, 1);
+    }
+  });
   bullets.forEach((bullet, index) => {
     if (bullet.y < 0) {
       bullets.splice(index, 1);
@@ -106,6 +129,14 @@ function spawnEnemy() {
     y: 0,
     width: 50,
     height: 50,
+    speedX:
+      Math.random() > 0.5
+        ? Math.random() * enemySpeed
+        : -Math.random() * enemySpeed,
+    speedY:
+      Math.random() > 0.5
+        ? Math.random() * enemySpeed
+        : -Math.random() * enemySpeed,
   };
   enemies.push(enemy);
 }
