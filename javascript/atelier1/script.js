@@ -48,3 +48,57 @@ function combinelist(string1, string2) {
   return result;
   // console.log(list);
 }
+
+// exercice 4
+const table = [17, 38, 10, 25, 72];
+
+table.sort();
+// console.log(table);
+
+table.push(12);
+// console.log(table);
+
+table.reverse();
+// console.log(table);
+
+for (let i = 0; i < table.length; i++) {
+  if (table[i] === 38) {
+    table.splice(i, 1);
+  }
+}
+// console.log(table);
+
+// console.log(table.slice(1, 3));
+
+// console.log(table.slice(0, 2));
+
+// console.log(table.slice(2));
+
+// exercice 5
+
+function entierAleatoire(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function ex5() {
+  count = 0;
+  valeur = entierAleatoire(0, 10);
+  console.log(valeur);
+  var input = prompt("saisir un entier :");
+  do {
+    count++;
+    if (input == valeur) {
+      alert("success");
+    } else {
+      alert("incorrect ");
+      input = prompt("saisir un entier :");
+    }
+  } while (count < 3);
+}
+// ex5();
+
+// exercie 6
+
+function modif_paragraph(id) {
+  var ph = document.getElementById(id).innerHTML;
+}
