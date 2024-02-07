@@ -13,7 +13,6 @@ body {
 }
 
 #gamecanvas {
-  font-style: ;
   border: 3px solid;
   border-color: rgb(0, 192, 250);
   margin-left: 5px;
@@ -27,4 +26,5 @@ body {
   border: 2px solid;
   border-color: white;
   background-color: rgba(240, 255, 255, 0.17);
+  float: right;
 }
