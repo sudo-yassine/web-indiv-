@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>inscription</title>
+    <title>inscrire</title>
+    <style>
+      .msg_erreur {
+        color: red;
+      }
+      .msg_success {
+        color: green;
+      }
+    </style>
   </head>
   <body>
     <a href="index.html">Acceuil</a>
@@ -14,19 +22,15 @@
     <img src="ultrawide_img.jpg" alt="image" />
 
     <table>
-      <form name="inscription au site">
+      <form id="inscription">
         <tr>
           <td>
             <label for="nom">Nom :</label>
           </td>
           <td>
-            <input
-              type="text"
-              name="nom"
-              id="nom"
-              pattern="[a-zA-Z]{2,}"
-              required
-            />
+            <input type="text" name="nom" id="nom" />
+            <span id="erreur_nom" class="msg_erreur"></span>
+            <span id="success_nom" class="msg_success"></span>
           </td>
         </tr>
         <tr>
@@ -34,14 +38,9 @@
             <label for="prenom">Prenom :</label>
           </td>
           <td>
-            <input
-              type="text"
-              name="prenom"
-              id="prenom"
-              part="a-z A-Z"
-              pattern="[a-zA-Z]{2,}"
-              required
-            />
+            <input type="text" name="prenom" id="prenom" />
+            <span id="error_prenom" class="msg_erreur"></span>
+            <span id="success_prenom" class="msg_success"></span>
           </td>
         </tr>
         <tr>
@@ -49,27 +48,20 @@
             <label for="email">Email :</label>
           </td>
           <td>
-            <input
-              type="text"
-              name="email"
-              id="email"
-              pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
-              required
-            />
+            <input type="text" name="email" id="email" />
+            <span id="error_email" class="msg_erreur"></span>
+
+            <span id="success_email" class="msg_success"></span>
           </td>
         </tr>
         <tr>
           <td>
-            <label for="telelphone">telelphone</label>
+            <label for="telephone">telelphone</label>
           </td>
           <td>
-            <input
-              type="number"
-              name="telelphone"
-              id="telelphone"
-              pattern="\d{8}"
-              required
-            />
+            <input type="number" name="telephone" id="telephone" />
+            <span id="erreur_telephone" class="msg_erreur"></span>
+            <span id="success_telephone" class="msg_success"></span>
           </td>
         </tr>
         <tr>
@@ -77,7 +69,10 @@
             <label for="date">date de naissance</label>
           </td>
           <td>
-            <input type="date" name="datef" id="datef" required />
+            <input type="date" name="datef" id="datef" />
+            <span id="erreur_datedenaissance" class="msg_erreur"></span>
+
+            <span id="success_datedenaissance" class="msg_success"></span>
           </td>
         </tr>
         <tr>
@@ -85,20 +80,19 @@
             <label for="motdepasse">mot de passe</label>
           </td>
           <td>
-            <input
-              type="password"
-              name="motdepasse"
-              id="motdepasse"
-              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              required
-            />
+            <input type="password" name="motdepasse" id="motdepasse" />
+            <span id="erreur_motdepasse" class="msg_erreur"></span>
+
+            <span id="success_motdepasse" class="msg_success"></span>
           </td>
         </tr>
         <tr>
           <td>
-            <button type="submit" onclick="validerDateOfBirth()">
-              s'inscrire
-            </button>
+            <input
+              type="submit"
+              value="s'inscrire"
+              onclick="validerDateOfBirth()"
+            />
           </td>
         </tr>
       </form>

@@ -2,18 +2,23 @@ body {
   background-image: url(https://img.itch.zone/aW1nLzQ4NzU2MzQucG5n/315x250%23c/4Ti0%2BG.png);
 }
 
+center {
+  display: flex;
+  margin-top: 180px;
+  margin-left: 300px;
+}
+
 #leftbar {
   width: 250px;
   height: 650px;
   border: 2px solid;
   border-color: white;
-  margin-left: 8%;
   background-color: rgba(240, 255, 255, 0.17);
-  float: left;
+  color: blueviolet;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #gamecanvas {
-  font-style: ;
   border: 3px solid;
   border-color: rgb(0, 192, 250);
   margin-left: 5px;
