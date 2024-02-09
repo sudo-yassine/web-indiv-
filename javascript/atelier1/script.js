@@ -99,6 +99,14 @@ function ex5() {
 
 // exercie 6
 
-function modif_paragraph(id) {
-  var ph = document.getElementById(id).innerHTML;
+// function modif_paragraph(id) {
+//   var ph = document.getElementById(id).innerHTML;
+// }
+
+function centrage_h1() {
+  var ph = document.getElementsByTagName("h1");
+
+  if (ph.length > 0) {
+    ph[0].setAttribute("align", "center");
+  }
 }
