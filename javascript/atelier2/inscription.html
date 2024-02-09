@@ -11,6 +11,17 @@
       .msg_success {
         color: green;
       }
+      label {
+        color: darkblue;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 600;
+        padding: 10px;
+      }
+      input {
+        border-radius: 5px;
+        padding: 4px;
+        float: inline-end;
+      }
     </style>
   </head>
   <body>
@@ -19,84 +30,86 @@
     <a href="">liste employes</a>
     <a href="inscription.html">inscription</a>
     <hr />
-    <img src="ultrawide_img.jpg" alt="image" />
+    <center>
+      <img src="ultrawide_img.jpg" alt="image" />
 
-    <table>
-      <form id="inscription">
-        <tr>
-          <td>
-            <label for="nom">Nom :</label>
-          </td>
-          <td>
-            <input type="text" name="nom" id="nom" />
-            <span id="erreur_nom" class="msg_erreur"></span>
-            <span id="success_nom" class="msg_success"></span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="prenom">Prenom :</label>
-          </td>
-          <td>
-            <input type="text" name="prenom" id="prenom" />
-            <span id="error_prenom" class="msg_erreur"></span>
-            <span id="success_prenom" class="msg_success"></span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="email">Email :</label>
-          </td>
-          <td>
-            <input type="text" name="email" id="email" />
-            <span id="error_email" class="msg_erreur"></span>
+      <table>
+        <form id="inscription">
+          <tr>
+            <td>
+              <label for="nom">Nom :</label>
+            </td>
+            <td>
+              <input type="text" name="nom" id="nom" />
+              <span id="erreur_nom" class="msg_erreur"></span>
+              <span id="success_nom" class="msg_success"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="prenom">Prenom :</label>
+            </td>
+            <td>
+              <input type="text" name="prenom" id="prenom" />
+              <span id="error_prenom" class="msg_erreur"></span>
+              <span id="success_prenom" class="msg_success"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email :</label>
+            </td>
+            <td>
+              <input type="text" name="email" id="email" />
+              <span id="error_email" class="msg_erreur"></span>
 
-            <span id="success_email" class="msg_success"></span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="telephone">telelphone</label>
-          </td>
-          <td>
-            <input type="number" name="telephone" id="telephone" />
-            <span id="erreur_telephone" class="msg_erreur"></span>
-            <span id="success_telephone" class="msg_success"></span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="date">date de naissance</label>
-          </td>
-          <td>
-            <input type="date" name="datef" id="datef" />
-            <span id="erreur_datedenaissance" class="msg_erreur"></span>
+              <span id="success_email" class="msg_success"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="telephone">telelphone</label>
+            </td>
+            <td>
+              <input type="number" name="telephone" id="telephone" />
+              <span id="erreur_telephone" class="msg_erreur"></span>
+              <span id="success_telephone" class="msg_success"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="date">date de naissance</label>
+            </td>
+            <td>
+              <input type="date" name="datef" id="datef" />
+              <span id="erreur_datedenaissance" class="msg_erreur"></span>
 
-            <span id="success_datedenaissance" class="msg_success"></span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="motdepasse">mot de passe</label>
-          </td>
-          <td>
-            <input type="password" name="motdepasse" id="motdepasse" />
-            <span id="erreur_motdepasse" class="msg_erreur"></span>
+              <span id="success_datedenaissance" class="msg_success"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="motdepasse">mot de passe</label>
+            </td>
+            <td>
+              <input type="password" name="motdepasse" id="motdepasse" />
+              <span id="erreur_motdepasse" class="msg_erreur"></span>
 
-            <span id="success_motdepasse" class="msg_success"></span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input
-              type="submit"
-              value="s'inscrire"
-              onclick="validerDateOfBirth()"
-            />
-          </td>
-        </tr>
-      </form>
-    </table>
+              <span id="success_motdepasse" class="msg_success"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="submit"
+                value="s'inscrire"
+                onclick="validerDateOfBirth()"
+              />
+            </td>
+          </tr>
+        </form>
+      </table>
+    </center>
     <hr />
     <footer>
       <p>
