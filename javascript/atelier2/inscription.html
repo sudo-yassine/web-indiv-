@@ -22,7 +22,6 @@
         margin: 2px;
         padding: 4px;
         gap: 45px;
-        float: inline-end;
       }
     </style>
   </head>
@@ -53,7 +52,7 @@
             </td>
             <td>
               <input type="text" name="prenom" id="prenom" />
-              <span id="error_prenom" class="msg_erreur"></span>
+              <span id="erreur_prenom" class="msg_erreur"></span>
               <span id="success_prenom" class="msg_success"></span>
             </td>
           </tr>
@@ -63,8 +62,7 @@
             </td>
             <td>
               <input type="text" name="email" id="email" />
-              <span id="error_email" class="msg_erreur"></span>
-
+              <span id="erreur_email" class="msg_erreur"></span>
               <span id="success_email" class="msg_success"></span>
             </td>
           </tr>
@@ -104,7 +102,7 @@
             <td></td>
             <td>
               <input
-                style="width: 174px"
+                style="width: 182px"
                 type="submit"
                 value="s'inscrire"
                 onclick="validerDateOfBirth()"
