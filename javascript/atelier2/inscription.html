@@ -19,7 +19,9 @@
       }
       input {
         border-radius: 5px;
+        margin: 2px;
         padding: 4px;
+        gap: 45px;
         float: inline-end;
       }
     </style>
@@ -68,7 +70,7 @@
           </tr>
           <tr>
             <td>
-              <label for="telephone">telelphone</label>
+              <label for="telephone">telelphone :</label>
             </td>
             <td>
               <input type="number" name="telephone" id="telephone" />
@@ -78,7 +80,7 @@
           </tr>
           <tr>
             <td>
-              <label for="date">date de naissance</label>
+              <label for="date">date de naissance :</label>
             </td>
             <td>
               <input type="date" name="datef" id="datef" />
@@ -89,7 +91,7 @@
           </tr>
           <tr>
             <td>
-              <label for="motdepasse">mot de passe</label>
+              <label for="motdepasse">mot de passe :</label>
             </td>
             <td>
               <input type="password" name="motdepasse" id="motdepasse" />
@@ -99,8 +101,10 @@
             </td>
           </tr>
           <tr>
+            <td></td>
             <td>
               <input
+                style="width: 174px"
                 type="submit"
                 value="s'inscrire"
                 onclick="validerDateOfBirth()"
