@@ -106,7 +106,5 @@ function ex5() {
 function centrage_h1() {
   var ph = document.getElementsByTagName("h1");
 
-  if (ph.length > 0) {
-    ph[0].setAttribute("align", "center");
-  }
+  ph[0].setAttribute("align", "center");
 }
