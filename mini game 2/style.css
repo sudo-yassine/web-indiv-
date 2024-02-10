@@ -1,0 +1,11 @@
+body {
+  background-color: rgb(198, 199, 137);
+}
+#gamecanvas {
+  border: 5px solid;
+  background-color: rgba(240, 255, 255, 0.295);
+  border-bottom: 25px solid;
+  border-bottom-color: rgb(82, 58, 27);
+  border-top: transparent;
+  margin-top: 5pc;
+}
