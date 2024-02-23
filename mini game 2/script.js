@@ -19,8 +19,7 @@ function updatefruitposition() {
     fruit.y += fruit.velocityy;
     fruit.x += fruit.velocityx;
     if (fruit.y + fruit.height > canvas.height) {
-      fruit.velocityy = -fruit.velocityy * 0.3;
-
+      fruit.velocityy = -fruit.velocityy * 0.5;
       fruit.y = canvas.height - fruit.height;
     }
   });
