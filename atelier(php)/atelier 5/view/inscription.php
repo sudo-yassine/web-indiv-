@@ -1,9 +1,3 @@
-
-<?php
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +6,8 @@
     <title></title>
 </head>
 <body>
-   <form action="userC.php" method="post">
+    
+   <form action="C:\xampp\htdocs\vscode\web(indiv)\atelier(php)\atelier 5\controller\userC.php" method="post">
     <label for="lastname">Last Name :</label>
     <input type="text" name="lastname" id="lastname">
     <br>
@@ -24,6 +19,9 @@
     <br>
     <label for="password">Password</label>
     <input type="text" name="password" id="password">
+    <br>
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username">
     <br>
     <button>Add</button>
     <button>Reset</button>

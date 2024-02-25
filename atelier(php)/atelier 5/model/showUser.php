@@ -2,7 +2,7 @@
 
 include 'user.php';
 
-// $user = new User(); 
+$user = new User('john', 'doe','jane.doe@gmail.com','testing123','jd'); 
 
 // $user->lastName = 'John';
 // $user->firstName = 'Doe';
